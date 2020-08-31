@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <hed>
+        <title>Service Evaluation</title>
+        <style>
+            h1,h3 {
+                font-family:"courier";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Restaurant Evaluation Survey</h1>
+        <h3>Please let us know how was the food and service.</h3>
+        <hr><br>
+        <p id="demo"></p>
+        <form style="font-family:verdana" action="Thanks.html" methgod="get">
+            <div id="1">
+                <label for="date"><strong>Day Visited:</strong></label>
+                <input  style="margin-left:80px" id="date" type="date" required>
+            </div><br>
+            <div id="2">
+                <label ><strong>Dine In / Take Out:</strong></label>
+                <input style="margin-left:14px" id="Dine In" type="radio" name="DineMode"  value="Dine In" required>
+                <label for="Dine In">Dine In</label><br>
+                <input style="margin-left:195px" id="Take Out" type="radio"  name="DineMode" value="Take Out" required>
+                <label for="Take Out">Take Out</label><br>
+            </div><br>
+            <div id="3">
+                <label><strong>Food Quality:</strong></label>
+
+                <input style="margin-left:69px" id="Excellent" type="radio" name="Foodquality" value="Excellent" required>
+                <label for="Excellent">Excellent</label><br>
+
+                <input style="margin-left:194px" id="Good" type="radio" name="Foodquality" value="Good" required>
+                <label for="Good">Good</label><br>
+
+                <input style="margin-left:194px" id="Average" type="radio" name="Foodquality" value="Average" required>
+                <label for="Average">Average</label><br>
+
+                <input style="margin-left:194px" id="Dissatisfied" type="radio" name="Foodquality" value="Dissatisfied" required>
+                <label for="Dissatisfied">Dissatisfied</label><br>
+            </div><br>
+            <div>
+                <label><strong>Overall Service</strong> <input style="margin-left:53px" id="Excellent" type="radio" name="Foodquality" value="Excellent" required><label style="margin-left:5px" for="Excellent">Excellent</label><br><strong>Quality:</strong></label>
+    
+                <input style="margin-left:118px" id="Good" type="radio" name="Foodquality" value="Good" required>
+                <label for="Good">Good</label><br>
+
+                <input style="margin-left:194px" id="Average" type="radio" name="Foodquality" value="Average" required>
+                <label for="Average">Average</label><br>
+
+                <input style="margin-left:194px" id="Dissatisfied" type="radio" name="Foodquality" value="Dissatisfied" required>
+                <label for="Dissatisfied">Dissatisfied</label><br>
+            </div><br>
+            <div>
+                <label><strong>Cleaniness:</strong></label>
+
+                <input style="margin-left:86px" id="Excellent" type="radio" name="Cleaniness" value="Excellent" required>
+                <label for="Excellent">Excellent</label><br>
+
+                <input style="margin-left:194px" id="Good" type="radio" name="Cleaniness" value="Good" required>
+                <label for="Good">Good</label><br>
+
+                <input style="margin-left:194px" id="Average" type="radio" name="Cleaniness" value="Average" required>
+                <label for="Average">Average</label><br>
+
+                <input style="margin-left:194px" id="Dissatisfied" type="radio" name="Cleaniness" value="Dissatisfied" required>
+                <label for="Dissatisfied">Dissatisfied</label><br>
+            </div><br>
+            <div>
+                <label><strong>Order Accuracy:</strong></label>
+
+                <input style="margin-left:44px" id="Excellent" type="radio" name="Order" value="Excellent" required>
+                <label for="Excellent">Excellent</label><br>
+
+                <input style="margin-left:194px" id="Good" type="radio" name="Order" value="Good" required>
+                <label for="Good">Good</label><br>
+
+                <input style="margin-left:194px" id="Average" type="radio" name="Order" value="Average" required>
+                <label for="Average">Average</label><br>
+
+                <input style="margin-left:194px" id="Dissatisfied" type="radio" name="Order" value="Dissatisfied" required>
+                <label for="Dissatisfied">Dissatisfied</label><br>
+            </div><br>
+            <div>
+                <label><strong>Speed of Service:</strong></label>
+
+                <input style="margin-left:32px" id="Excellent" type="radio" name="SOS" value="Excellent" required>
+                <label for="Excellent">Excellent</label><br>
+
+                <input style="margin-left:194px" id="Good" type="radio" name="SOS" value="Good" required>
+                <label for="Good">Good</label><br>
+
+                <input style="margin-left:194px" id="Average" type="radio" name="SOS" value="Average" required>
+                <label for="Average">Average</label><br>
+
+                <input style="margin-left:194px" id="Dissatisfied" type="radio" name="SOS" value="Dissatisfied" required>
+                <label for="Dissatisfied">Dissatisfied</label><br>
+            </div><br>
+            <div>
+                <label><strong>Value:</strong></label>
+
+                <input style="margin-left:132px" id="Excellent" type="radio" name="Value" value="Excellent" required>
+                <label for="Excellent">Excellent</label><br>
+
+                <input style="margin-left:194px" id="Good" type="radio" name="Value" value="Good">
+                <label for="Good">Good</label><br>
+
+                <input style="margin-left:194px" id="Average" type="radio" name="Value" value="Average">
+                <label for="Average">Average</label><br>
+
+                <input style="margin-left:194px" id="Dissatisfied" type="radio" name="Value" value="Dissatisfied">
+                <label for="Dissatisfied">Dissatisfied</label><br>
+            </div><br>
+            <div>
+                <label><strong>Overall Experience:</strong></label>
+
+                <input style="margin-left:13px" id="Excellent" type="radio" name="Experience" value="Excellent" required>
+                <label for="Excellent">Excellent</label><br>
+
+                <input style="margin-left:194px" id="Good" type="radio" name="Experience" value="Good" required>
+                <label for="Good">Good</label><br>
+
+                <input style="margin-left:194px" id="Average" type="radio" name="Experience" value="Average" required>
+                <label for="Average">Average</label><br>
+
+                <input style="margin-left:194px" id="Dissatisfied" type="radio" name="Experience" value="Dissatisfied" required>
+                <label for="Dissatisfied">Dissatisfied</label><br>
+            </div>
+            <h4>Any comments, questions or suggestions?</h4>
+            <textarea name="review" rows="8" cols="80"></textarea><br><br>
+            <label for="Name"><strong>Name: (optional)</strong></label>
+            <input style="margin-left:24px" id="Name" type="text"><br><br>
+            <label for="Email"><strong>Age:</strong></label>
+            <select style="margin-left:136px">
+                <option value="0"></option>
+                <option value="1" selected="1">under 13</option>
+                <option value="2">13-17</option>
+                <option value="3">18-24</option>
+                <option value="4">25-34</option>
+                <option value="5">35-44</option>
+                <option value="6">45-54</option>
+                <option value="7">55 or older</option>
+            </select><br><br>
+            <label for="Email"><strong>Email: (optional)</strong></label>
+            <input style="margin-left:24px" id="Email" type="email">
+            <br><br>
+            <input style="font-family:verdana;margin-left:184px" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
